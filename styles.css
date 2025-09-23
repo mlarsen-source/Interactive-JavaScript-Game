@@ -5,3 +5,10 @@ Filename: styles.css
 File Description: CSS for Interactive Java-Game
 
 */
+body {
+    margin: 0;
+}
+
+.boss {
+    text-align: center;
+}
