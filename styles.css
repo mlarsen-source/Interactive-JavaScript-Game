@@ -9,6 +9,10 @@ body {
     margin: 0;
 }
 
-.boss {
+h2, h3{
+    text-align: center;
+}
+
+.boss-container {
     text-align: center;
 }
