@@ -16,7 +16,7 @@ const dialogueBox = document.getElementById("dialogue");
 const image = document.getElementById("image");
 const button = document.getElementById("button");
 
-let health = 100;
+let health = 500;
 
 const dialogueList1 = [
     "Nice swing — did you mean to dust the air?",
