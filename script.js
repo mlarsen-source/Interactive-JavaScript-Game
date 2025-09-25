@@ -9,6 +9,7 @@ const healthbar = document.getElementById("healthbar");
 const damagePoints = document.getElementById("damage");
 const dialogueBox = document.getElementById("dialogue");
 const image = document.getElementById("image");
+const button = document.getElementById("button");
 
 let health = 100;
 
@@ -81,6 +82,7 @@ const dialogueList3 = [
     "That punch could knock the flavor out of bubblegum."
 ];
 
+
 document.getElementById("image").onclick = function() {
     if(health == 0 ) return;
     
@@ -94,6 +96,7 @@ document.getElementById("image").onclick = function() {
     dialogueBox.innerHTML = dialogue;
     if (health==0) {
         image.src="win.png";
+        button.style.display = "inline-block"
     }
 }
     
@@ -112,6 +115,23 @@ function chooseDialogue(damage) {
         return dialogueList3[Math.floor(Math.random() * dialogueList3.length)];
     }
 }
+
+image.addEventListener("mouseenter", () => {
+  document.body.style.cursor = "url('bat.png'), auto";
+});
+
+image.addEventListener("mouseleave", () => {
+  document.body.style.cursor = "auto";
+});
+
+button.onclick = function() {
+    health = 100;
+    healthbar.textContent = health;
+    damagePoints.textContent = 0;
+    dialogueBox.textContent = "Lets do this, punk!.";
+    image.src = "boss.png";
+    button.style.display = "none" 
+};
 
 // let dialogue = document.getElementById("dialogue");
 // function message() {

@@ -17,14 +17,17 @@ File Description: HTML for Interactive JavaScript-Game
   <script src="script.js" defer></script>
 </head>
 <body>
-  <h2><strong><span id="healthbar">1000</span>/1000</strong></h2>
+  <h2><strong>Health: <span id="healthbar">100</span>/100</strong></h2>
   <div class="boss-container">
     <div class="boss-image">
       <img src="boss.png" width="30%" height="30%" alt="boss cat" id="image">
     </div>
     <div id="dialogue" class="speech-bubble"></div>
+    <br>
+    <h3><strong>Damage: <span id="damage"></strong></h3>
+    <br>
+    <button type="button" id="button">New Game</button>
   </div>
-  <br>
-  <h3><strong>Damage: <span id="damage"></strong></h3>
+  
 </body>
 </html>

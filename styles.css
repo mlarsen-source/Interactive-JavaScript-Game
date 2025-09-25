@@ -16,3 +16,9 @@ h2, h3{
 .boss-container {
     text-align: center;
 }
+
+#button{
+    display: none; 
+    border-radius: 3rem;
+    padding: 1rem;
+}
