@@ -7,10 +7,41 @@ File Description: CSS for Interactive Java-Game
 */
 body {
     margin: 0;
+    padding: 1em;
 }
 
 h2, h3{
     text-align: center;
+}
+
+.health-bar {
+    margin: auto;
+    width: 40%;
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%;
+}
+
+.speech-bubble {
+    background-color: lightgray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 20px;
+    padding: 1em;
+    width: 40%;
+    margin: auto;
+    font-size: large;
+}
+
+.damage {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    width: 20%;
+    margin: auto;
+    padding: 0.5em;
 }
 
 .boss-container {

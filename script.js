@@ -5,6 +5,11 @@ Filename: script.js
 File Description: JavaScript Interactive JavaScript-Game
 
 */
+const bossmusic = document.getElementById("bossmusic");
+window.onload = function() {
+    bossmusic.play();
+}
+
 const healthbar = document.getElementById("healthbar");
 const damagePoints = document.getElementById("damage");
 const dialogueBox = document.getElementById("dialogue");
@@ -95,6 +100,9 @@ document.getElementById("image").onclick = function() {
     damagePoints.innerHTML = damage;
     dialogueBox.innerHTML = dialogue;
     if (health==0) {
+        bossmusic.pause();
+        bossmusic.src="victory.mp3";
+        bossmusic.play();
         image.src="win.png";
         button.style.display = "inline-block"
     }
@@ -125,12 +133,13 @@ image.addEventListener("mouseleave", () => {
 });
 
 button.onclick = function() {
-    health = 100;
-    healthbar.textContent = health;
-    damagePoints.textContent = 0;
-    dialogueBox.textContent = "Lets do this, punk!.";
-    image.src = "boss.png";
-    button.style.display = "none" 
+    location.reload();
+    // health = 100;
+    // healthbar.textContent = health;
+    // damagePoints.textContent = 0;
+    // dialogueBox.textContent = "Lets do this, punk!.";
+    // image.src = "boss.png";
+    // button.style.display = "none";
 };
 
 // let dialogue = document.getElementById("dialogue");
